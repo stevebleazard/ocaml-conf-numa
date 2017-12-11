@@ -7,7 +7,7 @@ license: "MIT"
 dev-repo: "https://www.github.com/stevebleazard/ocaml-conf-numa.git"
 
 build: [
-  ["sh" "-exc" "cc -c $CFLAGS -I/usr/local/include test.c"]
+  ["sh" "-exc" "cc -c $CFLAGS -I/usr/local/include files/test.c"]
 ]
 
 depexts: [
