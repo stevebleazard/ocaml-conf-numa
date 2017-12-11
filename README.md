@@ -1,0 +1,2 @@
+Virtual package relying on a libnuma system installation.
+This package can only install if the libnuma lib is installed on the system.
