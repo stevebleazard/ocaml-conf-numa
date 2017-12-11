@@ -6,10 +6,6 @@ bug-reports: "https://www.github.com/stevebleazard/ocaml-conf-numa/issues"
 license: "MIT"
 dev-repo: "https://www.github.com/stevebleazard/ocaml-conf-numa.git"
 
-build: [
-  ["sh" "-exc" "cc -c $CFLAGS -I/usr/local/include files/test.c"]
-]
-
 depexts: [
   [["debian"] ["libnuma-dev"]]
   [["ubuntu"] ["libnuma-dev"]]
@@ -19,4 +15,4 @@ depexts: [
   [["alpine"] ["libnuma-dev"]]
 ]
 
-available: [ ocaml-version >= "4.03.0" & os != "darwin" & os != "freebsd" & os != "openbsd" ]
+available: [ os != "darwin" & os != "freebsd" & os != "openbsd" ]
