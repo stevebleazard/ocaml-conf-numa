@@ -19,4 +19,4 @@ depexts: [
   [["alpine"] ["libnuma-dev"]]
 ]
 
-available: [ ocaml-version >= "4.03.0" & os != "darwin" ]
+available: [ ocaml-version >= "4.03.0" & os != "darwin" & os != "freebsd" & os != "openbsd" ]
