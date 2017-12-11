@@ -12,7 +12,11 @@ depexts: [
   [["centos"] ["numactl-libs" "numactl-devel"]]
   [["fedora"] ["numactl-libs" "numactl-devel"]]
   [["opensuse"] ["libnuma-devel"]]
-  [["alpine"] ["libnuma-dev"]]
+  [["alpine"] ["numactl-dev"]]
+]
+
+build: [
+  ["sh" "-exc" "cc -c $CFLAGS -I/usr/local/include files/test.c"]
 ]
 
 available: [ os != "darwin" & os != "freebsd" & os != "openbsd" ]
